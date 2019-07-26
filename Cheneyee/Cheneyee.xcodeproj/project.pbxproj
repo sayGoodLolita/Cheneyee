@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -108,6 +108,7 @@
 		04FDEB5E22EAE26E00095124 /* CYURLParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYURLParameters.m; sourceTree = "<group>"; };
 		04FDEB5F22EAE26E00095124 /* CYTabBarViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTabBarViewModel.h; sourceTree = "<group>"; };
 		04FDEB6022EAE26E00095124 /* NSError+CYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CYExtension.m"; sourceTree = "<group>"; };
+		04FDEBC722EAEEAE00095124 /* Cheneyee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cheneyee.h; sourceTree = "<group>"; };
 		5F49C5333252C08175584C2D /* Pods-Cheneyee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheneyee.debug.xcconfig"; path = "Target Support Files/Pods-Cheneyee/Pods-Cheneyee.debug.xcconfig"; sourceTree = "<group>"; };
 		F7CABBBFD1BDFD61EFDE0542 /* Pods-Cheneyee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheneyee.release.xcconfig"; path = "Target Support Files/Pods-Cheneyee/Pods-Cheneyee.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +218,7 @@
 				04FDEB5E22EAE26E00095124 /* CYURLParameters.m */,
 				04FDEB5F22EAE26E00095124 /* CYTabBarViewModel.h */,
 				04FDEB6022EAE26E00095124 /* NSError+CYExtension.m */,
+				04FDEBC722EAEEAE00095124 /* Cheneyee.h */,
 			);
 			path = Cheneyee;
 			sourceTree = "<group>";
@@ -227,7 +229,6 @@
 				5F49C5333252C08175584C2D /* Pods-Cheneyee.debug.xcconfig */,
 				F7CABBBFD1BDFD61EFDE0542 /* Pods-Cheneyee.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

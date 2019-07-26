@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Cheneyee"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Cheneyee, Any proj"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ spec.platform     = :ios, "9.0"
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/sayGoodLolita/Cheneyee.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/sayGoodLolita/Cheneyee.git", :tag => "1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ spec.platform     = :ios, "9.0"
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Cheneyee", "Cheneyee/Cheneyee/**/*.{h,m}"
+  spec.source_files  = "Cheneyee", "Cheneyee/Cheneyee/Cheneyee/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
