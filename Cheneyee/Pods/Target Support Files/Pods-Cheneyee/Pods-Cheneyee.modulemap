@@ -1,0 +1,6 @@
+framework module Pods_Cheneyee {
+  umbrella header "Pods-Cheneyee-umbrella.h"
+
+  export *
+  module * { export * }
+}

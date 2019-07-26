@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04FDEB1522EAE26100095124 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB1422EAE26100095124 /* AppDelegate.m */; };
+		04FDEB1822EAE26100095124 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB1722EAE26100095124 /* ViewController.m */; };
+		04FDEB1B22EAE26100095124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FDEB1922EAE26100095124 /* Main.storyboard */; };
+		04FDEB1D22EAE26200095124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FDEB1C22EAE26200095124 /* Assets.xcassets */; };
+		04FDEB2022EAE26200095124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FDEB1E22EAE26200095124 /* LaunchScreen.storyboard */; };
+		04FDEB2322EAE26200095124 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB2222EAE26200095124 /* main.m */; };
+		04FDEB6122EAE26E00095124 /* CYHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB2C22EAE26E00095124 /* CYHTTPResponse.m */; };
+		04FDEB6222EAE26E00095124 /* CYHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB2D22EAE26E00095124 /* CYHTTPRequest.m */; };
+		04FDEB6322EAE26E00095124 /* CYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB3122EAE26E00095124 /* CYTableViewCell.m */; };
+		04FDEB6422EAE26E00095124 /* CYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB3322EAE26E00095124 /* CYTabBarController.m */; };
+		04FDEB6522EAE26E00095124 /* CYConstParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB3422EAE26E00095124 /* CYConstParameters.m */; };
+		04FDEB6622EAE26E00095124 /* CYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB3522EAE26E00095124 /* CYNavigationController.m */; };
+		04FDEB6722EAE26E00095124 /* CYRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB3722EAE26E00095124 /* CYRouter.m */; };
+		04FDEB6822EAE26E00095124 /* CYTabBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB3C22EAE26E00095124 /* CYTabBarViewModel.m */; };
+		04FDEB6922EAE26E00095124 /* RACSignal+CYHTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB3D22EAE26E00095124 /* RACSignal+CYHTTPService.m */; };
+		04FDEB6A22EAE26E00095124 /* CYNavigationControllerStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB4122EAE26E00095124 /* CYNavigationControllerStack.m */; };
+		04FDEB6B22EAE26E00095124 /* CYEXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB4222EAE26E00095124 /* CYEXTRuntimeExtensions.m */; };
+		04FDEB6C22EAE26E00095124 /* CYHTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB4322EAE26E00095124 /* CYHTTPService.m */; };
+		04FDEB6D22EAE26E00095124 /* CYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB4422EAE26E00095124 /* CYViewController.m */; };
+		04FDEB6E22EAE26E00095124 /* UIScrollView+CYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB4622EAE26E00095124 /* UIScrollView+CYRefresh.m */; };
+		04FDEB6F22EAE26E00095124 /* CYTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB4B22EAE26E00095124 /* CYTableViewModel.m */; };
+		04FDEB7022EAE26E00095124 /* CYViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB4C22EAE26E00095124 /* CYViewModel.m */; };
+		04FDEB7122EAE26E00095124 /* CYDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB5022EAE26E00095124 /* CYDataModel.m */; };
+		04FDEB7222EAE26E00095124 /* CYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB5222EAE26E00095124 /* CYTableViewController.m */; };
+		04FDEB7322EAE26E00095124 /* AFHTTPSessionManager+CYSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB5322EAE26E00095124 /* AFHTTPSessionManager+CYSupport.m */; };
+		04FDEB7422EAE26E00095124 /* CYReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB5422EAE26E00095124 /* CYReflection.m */; };
+		04FDEB7522EAE26E00095124 /* CYKeyedSubscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB5622EAE26E00095124 /* CYKeyedSubscript.m */; };
+		04FDEB7622EAE26E00095124 /* CYConstHeaderParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB5B22EAE26E00095124 /* CYConstHeaderParameters.m */; };
+		04FDEB7722EAE26E00095124 /* CYViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB5C22EAE26E00095124 /* CYViewModelServicesImpl.m */; };
+		04FDEB7822EAE26E00095124 /* CYURLParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB5E22EAE26E00095124 /* CYURLParameters.m */; };
+		04FDEB7922EAE26E00095124 /* NSError+CYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB6022EAE26E00095124 /* NSError+CYExtension.m */; };
+		9FE3E83C3CFDF4B6C041993B /* Pods_Cheneyee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E186ED75CE9177098B97E4 /* Pods_Cheneyee.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03E186ED75CE9177098B97E4 /* Pods_Cheneyee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cheneyee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FDEB1022EAE26100095124 /* Cheneyee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheneyee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FDEB1322EAE26100095124 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04FDEB1422EAE26100095124 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04FDEB1622EAE26100095124 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04FDEB1722EAE26100095124 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04FDEB1A22EAE26100095124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04FDEB1C22EAE26200095124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FDEB1F22EAE26200095124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04FDEB2122EAE26200095124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FDEB2222EAE26200095124 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04FDEB2A22EAE26E00095124 /* CYViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYViewModel.h; sourceTree = "<group>"; };
+		04FDEB2B22EAE26E00095124 /* CYTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTableViewModel.h; sourceTree = "<group>"; };
+		04FDEB2C22EAE26E00095124 /* CYHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHTTPResponse.m; sourceTree = "<group>"; };
+		04FDEB2D22EAE26E00095124 /* CYHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHTTPRequest.m; sourceTree = "<group>"; };
+		04FDEB2E22EAE26E00095124 /* UIScrollView+CYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CYRefresh.h"; sourceTree = "<group>"; };
+		04FDEB2F22EAE26E00095124 /* CYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYViewController.h; sourceTree = "<group>"; };
+		04FDEB3022EAE26E00095124 /* CYHTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHTTPService.h; sourceTree = "<group>"; };
+		04FDEB3122EAE26E00095124 /* CYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTableViewCell.m; sourceTree = "<group>"; };
+		04FDEB3222EAE26E00095124 /* CYDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYDataModel.h; sourceTree = "<group>"; };
+		04FDEB3322EAE26E00095124 /* CYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTabBarController.m; sourceTree = "<group>"; };
+		04FDEB3422EAE26E00095124 /* CYConstParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYConstParameters.m; sourceTree = "<group>"; };
+		04FDEB3522EAE26E00095124 /* CYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYNavigationController.m; sourceTree = "<group>"; };
+		04FDEB3622EAE26E00095124 /* CYKeyedSubscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYKeyedSubscript.h; sourceTree = "<group>"; };
+		04FDEB3722EAE26E00095124 /* CYRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRouter.m; sourceTree = "<group>"; };
+		04FDEB3822EAE26E00095124 /* CYReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYReflection.h; sourceTree = "<group>"; };
+		04FDEB3922EAE26E00095124 /* AFHTTPSessionManager+CYSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+CYSupport.h"; sourceTree = "<group>"; };
+		04FDEB3A22EAE26E00095124 /* CYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTableViewController.h; sourceTree = "<group>"; };
+		04FDEB3B22EAE26E00095124 /* NSError+CYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CYExtension.h"; sourceTree = "<group>"; };
+		04FDEB3C22EAE26E00095124 /* CYTabBarViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTabBarViewModel.m; sourceTree = "<group>"; };
+		04FDEB3D22EAE26E00095124 /* RACSignal+CYHTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+CYHTTPService.m"; sourceTree = "<group>"; };
+		04FDEB3E22EAE26E00095124 /* CYURLParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYURLParameters.h; sourceTree = "<group>"; };
+		04FDEB3F22EAE26E00095124 /* CYViewModelServicesImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYViewModelServicesImpl.h; sourceTree = "<group>"; };
+		04FDEB4022EAE26E00095124 /* CYConstHeaderParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYConstHeaderParameters.h; sourceTree = "<group>"; };
+		04FDEB4122EAE26E00095124 /* CYNavigationControllerStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYNavigationControllerStack.m; sourceTree = "<group>"; };
+		04FDEB4222EAE26E00095124 /* CYEXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYEXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		04FDEB4322EAE26E00095124 /* CYHTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYHTTPService.m; sourceTree = "<group>"; };
+		04FDEB4422EAE26E00095124 /* CYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYViewController.m; sourceTree = "<group>"; };
+		04FDEB4522EAE26E00095124 /* CYHTTPServiceConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHTTPServiceConstant.h; sourceTree = "<group>"; };
+		04FDEB4622EAE26E00095124 /* UIScrollView+CYRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CYRefresh.m"; sourceTree = "<group>"; };
+		04FDEB4722EAE26E00095124 /* CYNavigationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYNavigationProtocol.h; sourceTree = "<group>"; };
+		04FDEB4822EAE26E00095124 /* CYConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYConstant.h; sourceTree = "<group>"; };
+		04FDEB4922EAE26E00095124 /* CYHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHTTPRequest.h; sourceTree = "<group>"; };
+		04FDEB4A22EAE26E00095124 /* CYHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYHTTPResponse.h; sourceTree = "<group>"; };
+		04FDEB4B22EAE26E00095124 /* CYTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTableViewModel.m; sourceTree = "<group>"; };
+		04FDEB4C22EAE26E00095124 /* CYViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYViewModel.m; sourceTree = "<group>"; };
+		04FDEB4D22EAE26E00095124 /* CYConstParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYConstParameters.h; sourceTree = "<group>"; };
+		04FDEB4E22EAE26E00095124 /* CYMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYMacros.h; sourceTree = "<group>"; };
+		04FDEB4F22EAE26E00095124 /* CYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTabBarController.h; sourceTree = "<group>"; };
+		04FDEB5022EAE26E00095124 /* CYDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYDataModel.m; sourceTree = "<group>"; };
+		04FDEB5122EAE26E00095124 /* CYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTableViewCell.h; sourceTree = "<group>"; };
+		04FDEB5222EAE26E00095124 /* CYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTableViewController.m; sourceTree = "<group>"; };
+		04FDEB5322EAE26E00095124 /* AFHTTPSessionManager+CYSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+CYSupport.m"; sourceTree = "<group>"; };
+		04FDEB5422EAE26E00095124 /* CYReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYReflection.m; sourceTree = "<group>"; };
+		04FDEB5522EAE26E00095124 /* CYRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRouter.h; sourceTree = "<group>"; };
+		04FDEB5622EAE26E00095124 /* CYKeyedSubscript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYKeyedSubscript.m; sourceTree = "<group>"; };
+		04FDEB5722EAE26E00095124 /* CYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYNavigationController.h; sourceTree = "<group>"; };
+		04FDEB5822EAE26E00095124 /* CYEXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYEXTRuntimeExtensions.h; sourceTree = "<group>"; };
+		04FDEB5922EAE26E00095124 /* CYViewModelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYViewModelServices.h; sourceTree = "<group>"; };
+		04FDEB5A22EAE26E00095124 /* CYNavigationControllerStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYNavigationControllerStack.h; sourceTree = "<group>"; };
+		04FDEB5B22EAE26E00095124 /* CYConstHeaderParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYConstHeaderParameters.m; sourceTree = "<group>"; };
+		04FDEB5C22EAE26E00095124 /* CYViewModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYViewModelServicesImpl.m; sourceTree = "<group>"; };
+		04FDEB5D22EAE26E00095124 /* RACSignal+CYHTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+CYHTTPService.h"; sourceTree = "<group>"; };
+		04FDEB5E22EAE26E00095124 /* CYURLParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYURLParameters.m; sourceTree = "<group>"; };
+		04FDEB5F22EAE26E00095124 /* CYTabBarViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTabBarViewModel.h; sourceTree = "<group>"; };
+		04FDEB6022EAE26E00095124 /* NSError+CYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CYExtension.m"; sourceTree = "<group>"; };
+		5F49C5333252C08175584C2D /* Pods-Cheneyee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheneyee.debug.xcconfig"; path = "Target Support Files/Pods-Cheneyee/Pods-Cheneyee.debug.xcconfig"; sourceTree = "<group>"; };
+		F7CABBBFD1BDFD61EFDE0542 /* Pods-Cheneyee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheneyee.release.xcconfig"; path = "Target Support Files/Pods-Cheneyee/Pods-Cheneyee.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04FDEB0D22EAE26100095124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE3E83C3CFDF4B6C041993B /* Pods_Cheneyee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FDEB0722EAE26100095124 = {
+			isa = PBXGroup;
+			children = (
+				04FDEB1222EAE26100095124 /* Cheneyee */,
+				04FDEB1122EAE26100095124 /* Products */,
+				079FC9390EA457DB7A2E4B2C /* Pods */,
+				2AE03B39DA09972F5EB504E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04FDEB1122EAE26100095124 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FDEB1022EAE26100095124 /* Cheneyee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04FDEB1222EAE26100095124 /* Cheneyee */ = {
+			isa = PBXGroup;
+			children = (
+				04FDEB2922EAE26E00095124 /* Cheneyee */,
+				04FDEB1322EAE26100095124 /* AppDelegate.h */,
+				04FDEB1422EAE26100095124 /* AppDelegate.m */,
+				04FDEB1622EAE26100095124 /* ViewController.h */,
+				04FDEB1722EAE26100095124 /* ViewController.m */,
+				04FDEB1922EAE26100095124 /* Main.storyboard */,
+				04FDEB1C22EAE26200095124 /* Assets.xcassets */,
+				04FDEB1E22EAE26200095124 /* LaunchScreen.storyboard */,
+				04FDEB2122EAE26200095124 /* Info.plist */,
+				04FDEB2222EAE26200095124 /* main.m */,
+			);
+			path = Cheneyee;
+			sourceTree = "<group>";
+		};
+		04FDEB2922EAE26E00095124 /* Cheneyee */ = {
+			isa = PBXGroup;
+			children = (
+				04FDEB2A22EAE26E00095124 /* CYViewModel.h */,
+				04FDEB2B22EAE26E00095124 /* CYTableViewModel.h */,
+				04FDEB2C22EAE26E00095124 /* CYHTTPResponse.m */,
+				04FDEB2D22EAE26E00095124 /* CYHTTPRequest.m */,
+				04FDEB2E22EAE26E00095124 /* UIScrollView+CYRefresh.h */,
+				04FDEB2F22EAE26E00095124 /* CYViewController.h */,
+				04FDEB3022EAE26E00095124 /* CYHTTPService.h */,
+				04FDEB3122EAE26E00095124 /* CYTableViewCell.m */,
+				04FDEB3222EAE26E00095124 /* CYDataModel.h */,
+				04FDEB3322EAE26E00095124 /* CYTabBarController.m */,
+				04FDEB3422EAE26E00095124 /* CYConstParameters.m */,
+				04FDEB3522EAE26E00095124 /* CYNavigationController.m */,
+				04FDEB3622EAE26E00095124 /* CYKeyedSubscript.h */,
+				04FDEB3722EAE26E00095124 /* CYRouter.m */,
+				04FDEB3822EAE26E00095124 /* CYReflection.h */,
+				04FDEB3922EAE26E00095124 /* AFHTTPSessionManager+CYSupport.h */,
+				04FDEB3A22EAE26E00095124 /* CYTableViewController.h */,
+				04FDEB3B22EAE26E00095124 /* NSError+CYExtension.h */,
+				04FDEB3C22EAE26E00095124 /* CYTabBarViewModel.m */,
+				04FDEB3D22EAE26E00095124 /* RACSignal+CYHTTPService.m */,
+				04FDEB3E22EAE26E00095124 /* CYURLParameters.h */,
+				04FDEB3F22EAE26E00095124 /* CYViewModelServicesImpl.h */,
+				04FDEB4022EAE26E00095124 /* CYConstHeaderParameters.h */,
+				04FDEB4122EAE26E00095124 /* CYNavigationControllerStack.m */,
+				04FDEB4222EAE26E00095124 /* CYEXTRuntimeExtensions.m */,
+				04FDEB4322EAE26E00095124 /* CYHTTPService.m */,
+				04FDEB4422EAE26E00095124 /* CYViewController.m */,
+				04FDEB4522EAE26E00095124 /* CYHTTPServiceConstant.h */,
+				04FDEB4622EAE26E00095124 /* UIScrollView+CYRefresh.m */,
+				04FDEB4722EAE26E00095124 /* CYNavigationProtocol.h */,
+				04FDEB4822EAE26E00095124 /* CYConstant.h */,
+				04FDEB4922EAE26E00095124 /* CYHTTPRequest.h */,
+				04FDEB4A22EAE26E00095124 /* CYHTTPResponse.h */,
+				04FDEB4B22EAE26E00095124 /* CYTableViewModel.m */,
+				04FDEB4C22EAE26E00095124 /* CYViewModel.m */,
+				04FDEB4D22EAE26E00095124 /* CYConstParameters.h */,
+				04FDEB4E22EAE26E00095124 /* CYMacros.h */,
+				04FDEB4F22EAE26E00095124 /* CYTabBarController.h */,
+				04FDEB5022EAE26E00095124 /* CYDataModel.m */,
+				04FDEB5122EAE26E00095124 /* CYTableViewCell.h */,
+				04FDEB5222EAE26E00095124 /* CYTableViewController.m */,
+				04FDEB5322EAE26E00095124 /* AFHTTPSessionManager+CYSupport.m */,
+				04FDEB5422EAE26E00095124 /* CYReflection.m */,
+				04FDEB5522EAE26E00095124 /* CYRouter.h */,
+				04FDEB5622EAE26E00095124 /* CYKeyedSubscript.m */,
+				04FDEB5722EAE26E00095124 /* CYNavigationController.h */,
+				04FDEB5822EAE26E00095124 /* CYEXTRuntimeExtensions.h */,
+				04FDEB5922EAE26E00095124 /* CYViewModelServices.h */,
+				04FDEB5A22EAE26E00095124 /* CYNavigationControllerStack.h */,
+				04FDEB5B22EAE26E00095124 /* CYConstHeaderParameters.m */,
+				04FDEB5C22EAE26E00095124 /* CYViewModelServicesImpl.m */,
+				04FDEB5D22EAE26E00095124 /* RACSignal+CYHTTPService.h */,
+				04FDEB5E22EAE26E00095124 /* CYURLParameters.m */,
+				04FDEB5F22EAE26E00095124 /* CYTabBarViewModel.h */,
+				04FDEB6022EAE26E00095124 /* NSError+CYExtension.m */,
+			);
+			path = Cheneyee;
+			sourceTree = "<group>";
+		};
+		079FC9390EA457DB7A2E4B2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F49C5333252C08175584C2D /* Pods-Cheneyee.debug.xcconfig */,
+				F7CABBBFD1BDFD61EFDE0542 /* Pods-Cheneyee.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2AE03B39DA09972F5EB504E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03E186ED75CE9177098B97E4 /* Pods_Cheneyee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04FDEB0F22EAE26100095124 /* Cheneyee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FDEB2622EAE26200095124 /* Build configuration list for PBXNativeTarget "Cheneyee" */;
+			buildPhases = (
+				610528839C74C6455A5F93B5 /* [CP] Check Pods Manifest.lock */,
+				04FDEB0C22EAE26100095124 /* Sources */,
+				04FDEB0D22EAE26100095124 /* Frameworks */,
+				04FDEB0E22EAE26100095124 /* Resources */,
+				7BAEB01F90E54580871518D3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cheneyee;
+			productName = Cheneyee;
+			productReference = 04FDEB1022EAE26100095124 /* Cheneyee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04FDEB0822EAE26100095124 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Cheney Mars";
+				TargetAttributes = {
+					04FDEB0F22EAE26100095124 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 04FDEB0B22EAE26100095124 /* Build configuration list for PBXProject "Cheneyee" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04FDEB0722EAE26100095124;
+			productRefGroup = 04FDEB1122EAE26100095124 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04FDEB0F22EAE26100095124 /* Cheneyee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04FDEB0E22EAE26100095124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FDEB2022EAE26200095124 /* LaunchScreen.storyboard in Resources */,
+				04FDEB1D22EAE26200095124 /* Assets.xcassets in Resources */,
+				04FDEB1B22EAE26100095124 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		610528839C74C6455A5F93B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cheneyee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BAEB01F90E54580871518D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cheneyee/Pods-Cheneyee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cheneyee/Pods-Cheneyee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cheneyee/Pods-Cheneyee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04FDEB0C22EAE26100095124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FDEB7622EAE26E00095124 /* CYConstHeaderParameters.m in Sources */,
+				04FDEB6822EAE26E00095124 /* CYTabBarViewModel.m in Sources */,
+				04FDEB6F22EAE26E00095124 /* CYTableViewModel.m in Sources */,
+				04FDEB7922EAE26E00095124 /* NSError+CYExtension.m in Sources */,
+				04FDEB6E22EAE26E00095124 /* UIScrollView+CYRefresh.m in Sources */,
+				04FDEB6722EAE26E00095124 /* CYRouter.m in Sources */,
+				04FDEB1822EAE26100095124 /* ViewController.m in Sources */,
+				04FDEB7722EAE26E00095124 /* CYViewModelServicesImpl.m in Sources */,
+				04FDEB2322EAE26200095124 /* main.m in Sources */,
+				04FDEB7022EAE26E00095124 /* CYViewModel.m in Sources */,
+				04FDEB6A22EAE26E00095124 /* CYNavigationControllerStack.m in Sources */,
+				04FDEB6122EAE26E00095124 /* CYHTTPResponse.m in Sources */,
+				04FDEB7422EAE26E00095124 /* CYReflection.m in Sources */,
+				04FDEB7522EAE26E00095124 /* CYKeyedSubscript.m in Sources */,
+				04FDEB7222EAE26E00095124 /* CYTableViewController.m in Sources */,
+				04FDEB7822EAE26E00095124 /* CYURLParameters.m in Sources */,
+				04FDEB6422EAE26E00095124 /* CYTabBarController.m in Sources */,
+				04FDEB1522EAE26100095124 /* AppDelegate.m in Sources */,
+				04FDEB7122EAE26E00095124 /* CYDataModel.m in Sources */,
+				04FDEB6D22EAE26E00095124 /* CYViewController.m in Sources */,
+				04FDEB7322EAE26E00095124 /* AFHTTPSessionManager+CYSupport.m in Sources */,
+				04FDEB6C22EAE26E00095124 /* CYHTTPService.m in Sources */,
+				04FDEB6522EAE26E00095124 /* CYConstParameters.m in Sources */,
+				04FDEB6922EAE26E00095124 /* RACSignal+CYHTTPService.m in Sources */,
+				04FDEB6222EAE26E00095124 /* CYHTTPRequest.m in Sources */,
+				04FDEB6322EAE26E00095124 /* CYTableViewCell.m in Sources */,
+				04FDEB6B22EAE26E00095124 /* CYEXTRuntimeExtensions.m in Sources */,
+				04FDEB6622EAE26E00095124 /* CYNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04FDEB1922EAE26100095124 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FDEB1A22EAE26100095124 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04FDEB1E22EAE26200095124 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FDEB1F22EAE26200095124 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04FDEB2422EAE26200095124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04FDEB2522EAE26200095124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04FDEB2722EAE26200095124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F49C5333252C08175584C2D /* Pods-Cheneyee.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cheneyee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saygoodlolita.Cheneyee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04FDEB2822EAE26200095124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7CABBBFD1BDFD61EFDE0542 /* Pods-Cheneyee.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cheneyee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saygoodlolita.Cheneyee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FDEB0B22EAE26100095124 /* Build configuration list for PBXProject "Cheneyee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FDEB2422EAE26200095124 /* Debug */,
+				04FDEB2522EAE26200095124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FDEB2622EAE26200095124 /* Build configuration list for PBXNativeTarget "Cheneyee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FDEB2722EAE26200095124 /* Debug */,
+				04FDEB2822EAE26200095124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04FDEB0822EAE26100095124 /* Project object */;
+}
