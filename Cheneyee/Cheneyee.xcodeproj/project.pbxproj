@@ -350,12 +350,12 @@
 			isa = PBXGroup;
 			children = (
 				04F1E71123B9D42600A6A15A /* CYDataModel.h */,
-				04F1E71223B9D42600A6A15A /* CYReflection.h */,
-				04F1E71323B9D42600A6A15A /* NSError+CYExtension.h */,
-				04F1E71423B9D42600A6A15A /* CYEXTRuntimeExtensions.m */,
 				04F1E71523B9D42600A6A15A /* CYDataModel.m */,
-				04F1E71623B9D42600A6A15A /* CYReflection.m */,
 				04F1E71723B9D42600A6A15A /* CYEXTRuntimeExtensions.h */,
+				04F1E71423B9D42600A6A15A /* CYEXTRuntimeExtensions.m */,
+				04F1E71223B9D42600A6A15A /* CYReflection.h */,
+				04F1E71623B9D42600A6A15A /* CYReflection.m */,
+				04F1E71323B9D42600A6A15A /* NSError+CYExtension.h */,
 				04F1E71823B9D42600A6A15A /* NSError+CYExtension.m */,
 			);
 			path = DataModel;

@@ -64,8 +64,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-spec.platform     = :ios
-spec.platform     = :ios, "9.0"
+  spec.platform     = :ios
+  spec.platform     = :ios, "11.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -117,7 +117,7 @@ spec.platform     = :ios, "9.0"
   #  the lib prefix of their name.
   #
 
-spec.framework  = "UIKit"
+  # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
@@ -134,14 +134,11 @@ spec.framework  = "UIKit"
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-spec.dependency "YYModel"
-spec.dependency "ReactiveObjC"
-spec.dependency "IQKeyboardManager"
-spec.dependency "MJRefresh"
-spec.dependency "AFNetworking"
-spec.dependency "IGListKit"
-
-
-
+  spec.dependency "YYModel"
+  spec.dependency "ReactiveObjC"
+  spec.dependency "IQKeyboardManager"
+  spec.dependency "MJRefresh"
+  spec.dependency "AFNetworking"
+  spec.dependency "IGListKit"
 
 end
