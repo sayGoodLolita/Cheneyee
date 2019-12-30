@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Cheneyee"
-  spec.version      = "1.0.1"
+  spec.version      = "1.1.0"
   spec.summary      = "Cheneyee, Any proj"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ spec.platform     = :ios, "9.0"
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/sayGoodLolita/Cheneyee.git", :tag => "1.0.1" }
+  spec.source       = { :git => "https://github.com/sayGoodLolita/Cheneyee.git", :tag => "1.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -134,12 +134,12 @@ spec.framework  = "UIKit"
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-spec.dependency "YYKit"
+spec.dependency "YYModel"
 spec.dependency "ReactiveObjC"
 spec.dependency "IQKeyboardManager"
 spec.dependency "MJRefresh"
 spec.dependency "AFNetworking"
-spec.dependency "QMUIKit"
+spec.dependency "IGListKit"
 
 
 

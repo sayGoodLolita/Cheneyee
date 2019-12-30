@@ -1,7 +1,8 @@
 ${PODS_ROOT}/Target Support Files/Pods-Cheneyee/Pods-Cheneyee-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/IGListDiffKit/IGListDiffKit.framework
+${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
-${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework
 ${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework
-${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework
+${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework

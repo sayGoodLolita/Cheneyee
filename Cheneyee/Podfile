@@ -4,12 +4,14 @@
 target 'Cheneyee' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'YYKit'
-  pod 'ReactiveObjC'
-  pod 'IQKeyboardManager'
-  pod 'MJRefresh'   
-  pod 'AFNetworking'
-  pod 'QMUIKit'
+  
+  pod "AFNetworking"
+  pod "ReactiveObjC"
+  pod "MJRefresh"
+  pod "YYModel"
+  pod "IQKeyboardManager"
+  pod "IGListKit"
+  
   # Pods for Cheneyee
 
 end
