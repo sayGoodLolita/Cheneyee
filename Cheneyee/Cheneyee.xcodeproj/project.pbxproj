@@ -12,10 +12,7 @@
 		04A6683E23BCECD700522921 /* CYWebViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A667E723BCECD700522921 /* CYWebViewModel.m */; };
 		04A6683F23BCECD700522921 /* CYViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A667E823BCECD700522921 /* CYViewModel.m */; };
 		04A6684023BCECD700522921 /* CYViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A667EA23BCECD700522921 /* CYViewModelServicesImpl.m */; };
-		04A6684123BCECD700522921 /* UIImage+CYEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A667EF23BCECD700522921 /* UIImage+CYEx.m */; };
 		04A6684223BCECD700522921 /* UIScrollView+CYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A667F223BCECD700522921 /* UIScrollView+CYRefresh.m */; };
-		04A6684323BCECD700522921 /* UIView+CYEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A667F423BCECD700522921 /* UIView+CYEx.m */; };
-		04A6684423BCECD700522921 /* UIBarButtonItem+CYEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A667F723BCECD700522921 /* UIBarButtonItem+CYEx.m */; };
 		04A6684523BCECD700522921 /* UINavigationController+CYEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A667FA23BCECD700522921 /* UINavigationController+CYEx.m */; };
 		04A6684623BCECD700522921 /* CYFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6680023BCECD700522921 /* CYFileManager.m */; };
 		04A6684723BCECD700522921 /* CYTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6680323BCECD700522921 /* CYTools.m */; };
@@ -64,14 +61,8 @@
 		04A667E923BCECD700522921 /* CYViewModelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYViewModelServices.h; sourceTree = "<group>"; };
 		04A667EA23BCECD700522921 /* CYViewModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYViewModelServicesImpl.m; sourceTree = "<group>"; };
 		04A667EB23BCECD700522921 /* CYTabBarViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTabBarViewModel.h; sourceTree = "<group>"; };
-		04A667EE23BCECD700522921 /* UIImage+CYEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CYEx.h"; sourceTree = "<group>"; };
-		04A667EF23BCECD700522921 /* UIImage+CYEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CYEx.m"; sourceTree = "<group>"; };
 		04A667F123BCECD700522921 /* UIScrollView+CYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CYRefresh.h"; sourceTree = "<group>"; };
 		04A667F223BCECD700522921 /* UIScrollView+CYRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CYRefresh.m"; sourceTree = "<group>"; };
-		04A667F423BCECD700522921 /* UIView+CYEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CYEx.m"; sourceTree = "<group>"; };
-		04A667F523BCECD700522921 /* UIView+CYEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CYEx.h"; sourceTree = "<group>"; };
-		04A667F723BCECD700522921 /* UIBarButtonItem+CYEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CYEx.m"; sourceTree = "<group>"; };
-		04A667F823BCECD700522921 /* UIBarButtonItem+CYEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CYEx.h"; sourceTree = "<group>"; };
 		04A667FA23BCECD700522921 /* UINavigationController+CYEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CYEx.m"; sourceTree = "<group>"; };
 		04A667FB23BCECD700522921 /* UINavigationController+CYEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CYEx.h"; sourceTree = "<group>"; };
 		04A667FC23BCECD700522921 /* Cheneyee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cheneyee.h; sourceTree = "<group>"; };
@@ -188,22 +179,10 @@
 		04A667EC23BCECD700522921 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				04A667F623BCECD700522921 /* UIBarButtonItem */,
-				04A667ED23BCECD700522921 /* UIImage */,
 				04A667F923BCECD700522921 /* UINavigationController */,
 				04A667F023BCECD700522921 /* UIScrollView */,
-				04A667F323BCECD700522921 /* UIView */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		04A667ED23BCECD700522921 /* UIImage */ = {
-			isa = PBXGroup;
-			children = (
-				04A667EE23BCECD700522921 /* UIImage+CYEx.h */,
-				04A667EF23BCECD700522921 /* UIImage+CYEx.m */,
-			);
-			path = UIImage;
 			sourceTree = "<group>";
 		};
 		04A667F023BCECD700522921 /* UIScrollView */ = {
@@ -213,24 +192,6 @@
 				04A667F223BCECD700522921 /* UIScrollView+CYRefresh.m */,
 			);
 			path = UIScrollView;
-			sourceTree = "<group>";
-		};
-		04A667F323BCECD700522921 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				04A667F523BCECD700522921 /* UIView+CYEx.h */,
-				04A667F423BCECD700522921 /* UIView+CYEx.m */,
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		04A667F623BCECD700522921 /* UIBarButtonItem */ = {
-			isa = PBXGroup;
-			children = (
-				04A667F823BCECD700522921 /* UIBarButtonItem+CYEx.h */,
-				04A667F723BCECD700522921 /* UIBarButtonItem+CYEx.m */,
-			);
-			path = UIBarButtonItem;
 			sourceTree = "<group>";
 		};
 		04A667F923BCECD700522921 /* UINavigationController */ = {
@@ -572,7 +533,6 @@
 				04A6684823BCECD700522921 /* GTMBase64.m in Sources */,
 				04A6685923BCECD700522921 /* CYWebViewController.m in Sources */,
 				04A6684023BCECD700522921 /* CYViewModelServicesImpl.m in Sources */,
-				04A6684323BCECD700522921 /* UIView+CYEx.m in Sources */,
 				04A6683F23BCECD700522921 /* CYViewModel.m in Sources */,
 				04A6684A23BCECD700522921 /* CYHTTPResponse.m in Sources */,
 				04A6683D23BCECD700522921 /* CYListViewModel.m in Sources */,
@@ -588,10 +548,8 @@
 				04A6685A23BCECD700522921 /* CYNavigationController.m in Sources */,
 				04A6684B23BCECD700522921 /* RACSignal+CYHTTPService.m in Sources */,
 				04A6685623BCECD700522921 /* CYListViewController.m in Sources */,
-				04A6684123BCECD700522921 /* UIImage+CYEx.m in Sources */,
 				04A6685823BCECD700522921 /* CYTabBarController.m in Sources */,
 				04A6684E23BCECD700522921 /* CYHTTPRequest.m in Sources */,
-				04A6684423BCECD700522921 /* UIBarButtonItem+CYEx.m in Sources */,
 				04A6684723BCECD700522921 /* CYTools.m in Sources */,
 				04A6685323BCECD700522921 /* CYDataModel.m in Sources */,
 			);
