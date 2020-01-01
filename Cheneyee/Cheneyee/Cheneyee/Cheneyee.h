@@ -13,13 +13,11 @@
     pod "YYModel"
     pod "IQKeyboardManager"
     pod "IGListKit"
-    
-    推荐
     pod "Masonry"
+
+    推荐
     pod "QMUIKit"
  */
-
-#import <Foundation/Foundation.h>
 
 // 创建单例
 #define CY_SINGLETON_DEF(_type_) + (_type_ *)sharedInstance;\
@@ -65,6 +63,7 @@ return theSharedInstance;\
 #import "CYViewModelServicesImpl.h"
 
 #import "CYHTTPService.h"
+#import "CYAppStorePay.h"
 
 #import "CYTools.h"
 #import "CYFileManager.h"

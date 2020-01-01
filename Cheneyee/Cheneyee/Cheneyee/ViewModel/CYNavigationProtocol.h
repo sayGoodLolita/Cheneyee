@@ -7,7 +7,6 @@
 //  关于导航栏跳转 (push/pop,  present/dismiss) 的协议
 
 #import <Foundation/Foundation.h>
-#import "CYDataModel.h"
 
 @class CYViewModel;
 
@@ -25,10 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)popToRootViewModelAnimated:(BOOL)animated;
 
 /// 根据 viewModel present 到 viewController
-- (void)presentViewModel:(CYViewModel *)viewModel animated:(BOOL)animated completion:(VoidBlock)completion;
+- (void)presentViewModel:(CYViewModel *)viewModel animated:(BOOL)animated completion:(void (^ __nullable)(void))completion;
 
 /// dismiss 当前 viewController
-- (void)dismissViewModelAnimated:(BOOL)animated completion:(VoidBlock)completion;
+- (void)dismissViewModelAnimated:(BOOL)animated completion:(void (^ __nullable)(void))completion;
 
 /// 设置 rootViewController
 - (void)resetRootViewModel:(CYViewModel *)viewModel;

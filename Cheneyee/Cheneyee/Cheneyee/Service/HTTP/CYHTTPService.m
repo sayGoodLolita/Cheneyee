@@ -8,6 +8,7 @@
 
 #import "CYHTTPService.h"
 #import <AFNetworking/AFNetworkActivityIndicatorManager.h>
+#import "CYTools.h"
 
 NSString * const CYHTTPServiceErrorDomain = @"CYHTTPServiceErrorDomain";
 

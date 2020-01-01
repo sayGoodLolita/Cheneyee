@@ -18,4 +18,9 @@
     return self;
 }
 
+- (void)initialize {
+    [super initialize];
+    self.navigationBarHidden = YES;
+}
+
 @end

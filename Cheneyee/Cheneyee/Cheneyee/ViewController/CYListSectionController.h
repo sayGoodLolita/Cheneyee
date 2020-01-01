@@ -7,7 +7,8 @@
 //
 
 #import <IGListKit/IGListKit.h>
-#import "CYViewModel.h"
+#import "CYDataModel.h"
+#import "CYViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

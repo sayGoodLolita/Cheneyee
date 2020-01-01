@@ -7,17 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Cheneyee.h"
-
 
 /// 获取路径
-CG_INLINE NSString *
+static inline NSString *
 cy_path(NSURL * url) {
     return [url.absoluteString stringByReplacingOccurrencesOfString:@"file://" withString:@""].stringByRemovingPercentEncoding;
 }
 
 /// 获取当前时间戳
-CG_INLINE NSString *
+static inline NSString *
 cy_timestamp(void) {
     NSDate * date = [NSDate dateWithTimeIntervalSinceNow:0];
     return [NSString stringWithFormat:@"%0.f", date.timeIntervalSince1970];
@@ -29,69 +27,69 @@ cy_getTime(NSInteger second);
 
 #pragma mark - 沙盒目录
 /// 沙盒路径
-CG_INLINE NSString *
+static inline NSString *
 cy_sandboxPath(void) {
     return NSHomeDirectory();
 }
 
 /// 沙盒中 Documents 路径
-CG_INLINE NSString *
+static inline NSString *
 cy_documentsPath(void) {
     return NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
 }
 
 /// 沙盒中 Library 路径
-CG_INLINE NSString *
+static inline NSString *
 cy_libraryPath(void) {
     return NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES).firstObject;
 }
 
 /// 沙盒中 Library/Preferences 路径
-CG_INLINE NSString *
+static inline NSString *
 cy_preferencesPath(void) {
     return [cy_libraryPath() stringByAppendingPathComponent:@"Preferences"];
 }
 
 /// 沙盒中 Library/Caches 路径
-CG_INLINE NSString *
+static inline NSString *
 cy_cachesPath(void) {
     return NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
 }
 
 /// 沙盒中 tmp 路径
-CG_INLINE NSString *
+static inline NSString *
 cy_tmpPath(void) {
     return NSTemporaryDirectory();
 }
 
 #pragma mark - 文件属性
 /// 获取文件属性
-CG_INLINE NSDictionary *
+static inline NSDictionary *
 cy_fileAttributes(NSString * path) {
     return [NSFileManager.defaultManager attributesOfItemAtPath:path error:nil];
 }
 
 /// 获取文件大小
-CG_INLINE NSString *
+static inline NSString *
 cy_fileSize(NSString * path) {
     return cy_fileAttributes(path)[NSFileSize];
 }
 
 /// 获取文件创建时间
-CG_INLINE NSDate *
+static inline NSDate *
 cy_fileCreateTime(NSString * path) {
     return cy_fileAttributes(path)[NSFileCreationDate];
 }
 
 
 /// 获取文件名
-CG_INLINE NSString *
+static inline NSString *
 cy_fileName(NSString * path, BOOL suffix) {
     return suffix ? path.lastPathComponent : path.lastPathComponent.stringByDeletingPathExtension;
 }
 
 /// 获取文件后缀
-CG_INLINE NSString *
+static inline NSString *
 cy_fileSuffix(NSString * path) {
     return path.pathExtension;
 }
@@ -105,13 +103,13 @@ BOOL
 cy_moveFile(NSString * path, NSString * toPath);
 
 /// 删除文件
-CG_INLINE BOOL
+static inline BOOL
 cy_removeFile(NSString * path) {
     return [NSFileManager.defaultManager removeItemAtPath:path error:nil];
 }
 
 /// 创建文件夹
-CG_INLINE BOOL
+static inline BOOL
 cy_createDirectory(NSString * path) {
     return [NSFileManager.defaultManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
 }
@@ -126,7 +124,7 @@ NSArray *
 cy_filesInDirectory(NSString * path, BOOL deep);
 
 /// 判断路径是否为文件夹
-CG_INLINE BOOL
+static inline BOOL
 cy_isDirectory(NSString * path) {
     return cy_fileAttributes(path)[NSFileType] == NSFileTypeDirectory;
 }

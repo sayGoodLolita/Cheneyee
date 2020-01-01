@@ -7,7 +7,8 @@
 //
 
 #import "CYAppStorePay.h"
-#import "Cheneyee.h"
+#import "CYHTTPService.h"
+#import "CYTools.h"
 
 @interface CYAppStorePay () <SKProductsRequestDelegate, SKPaymentTransactionObserver>
 

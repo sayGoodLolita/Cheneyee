@@ -10,6 +10,8 @@
 #import "CYEXTRuntimeExtensions.h"
 #import "CYReflection.h"
 #import "NSError+CYExtension.h"
+#import <YYModel/YYModel.h>
+#import <IGListDiffable.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
 /// 验证对象的值, 并在必要时赋值
@@ -34,6 +36,10 @@ static BOOL CYValidateAndSetValue(id obj, NSString * key, id value, BOOL forceUp
 #endif
     }
 }
+
+@interface CYDataModel () <IGListDiffable, YYModel>
+
+@end
 
 @implementation CYDataModel
 

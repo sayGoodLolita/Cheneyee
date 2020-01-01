@@ -7,6 +7,7 @@
 //
 
 #import "CYListViewController.h"
+#import "UIScrollView+CYRefresh.h"
 
 @interface CYListViewController ()
 
@@ -48,7 +49,7 @@
             @strongify(self);
             [self collectionViewDidTriggerHeaderRefresh];
         }];
-        [self.collectionView.mj_header beginRefreshing];
+        // 这里不再默认下拉刷新, 改为由 shouldRequestRemoteDataOnViewDidLoad 值确认
     }
     if (self.viewModel.shouldPullUpToLoadMore) {
         // 上拉加载
@@ -71,11 +72,9 @@
           if (self.viewModel.shouldEndRefreshingWithNoMoreData) [self.collectionView.mj_footer resetNoMoreData];
       } error:^(NSError * _Nullable error) {
           @strongify(self)
-          // 已经在 bindViewModel 中添加了对 viewModel.dataSource 的变化来刷新数据, 所有 reload = NO 即可
           [self.collectionView.mj_header endRefreshing];
       } completed:^{
           @strongify(self)
-          // 已经在 bindViewModel 中添加了对 viewModel.dataSource 的变化来刷新数据, 所有 reload = NO 即可
           [self.collectionView.mj_header endRefreshing];
           // 请求完成
           [self requestDataCompleted];

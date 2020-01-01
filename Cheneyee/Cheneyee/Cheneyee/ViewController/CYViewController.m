@@ -56,9 +56,6 @@
     IQKeyboardManager.sharedManager.enable = self.viewModel.keyboardEnable;
     IQKeyboardManager.sharedManager.shouldResignOnTouchOutside = self.viewModel.shouldResignOnTouchOutside;
     IQKeyboardManager.sharedManager.keyboardDistanceFromTextField = self.viewModel.keyboardDistanceFromTextField;
-    // 配置 largeTitle
-    self.navigationController.navigationBar.prefersLargeTitles = YES;
-    self.navigationItem.largeTitleDisplayMode = self.viewModel.largeTitles ? UINavigationItemLargeTitleDisplayModeAlways : UINavigationItemLargeTitleDisplayModeNever;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

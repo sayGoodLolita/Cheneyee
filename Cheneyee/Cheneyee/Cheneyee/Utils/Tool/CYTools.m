@@ -8,9 +8,32 @@
 
 #import "CYTools.h"
 #import <CommonCrypto/CommonDigest.h>
-#import <CommonCrypto/CommonCryptor.h>
-#import <AVFoundation/AVFoundation.h>
+#import <Masonry/Masonry.h>
 #import "GTMBase64.h"
+
+/// 创建等宽 view
+void cy_makeEqualWidthViews(NSArray * views, UIView * containerView, CGFloat LRpadding, CGFloat viewPadding) {
+    UIView * lastView;
+    for (UIView * view in views) {
+        [containerView addSubview:view];
+        if (lastView) {
+            [view mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.bottom.equalTo(containerView);
+                make.left.equalTo(lastView.mas_right).offset(viewPadding);
+                make.width.equalTo(lastView);
+            }];
+        } else {
+            [view mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(containerView).offset(LRpadding);
+                make.top.bottom.equalTo(containerView);
+            }];
+        }
+        lastView=view;
+    }
+    [lastView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(containerView).offset(-LRpadding);
+    }];
+}
 
 NSString * cy_md5(NSString * inPutText) {
     const char * cStr = inPutText.UTF8String;
@@ -89,17 +112,4 @@ NSString * cy_encryptWithContent(NSString * content, CCOperation type, NSString 
     const char * miChar;
     miChar = cy_encryptWithKeyAndType(contentChar, type, keyChar);
     return  [NSString stringWithCString:miChar encoding:NSUTF8StringEncoding];
-}
-
-UIImage * cy_getVideoFirstImage(NSString * path) {
-    AVURLAsset * asset = [AVURLAsset URLAssetWithURL:[NSURL fileURLWithPath:path] options:nil];
-    AVAssetImageGenerator * gen = [AVAssetImageGenerator assetImageGeneratorWithAsset:asset];
-    gen.appliesPreferredTrackTransform = YES;
-    CMTime time = CMTimeMakeWithSeconds(0.0, 600);
-    NSError * error = nil;
-    CMTime actualTime;
-    CGImageRef image = [gen copyCGImageAtTime:time actualTime:&actualTime error:&error];
-    UIImage * thumb = [UIImage imageWithCGImage:image];
-    CGImageRelease(image);
-    return thumb;
 }

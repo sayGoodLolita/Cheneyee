@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <CommonCrypto/CommonCryptor.h>
 
+/// 创建等宽 view
+void
+cy_makeEqualWidthViews(NSArray * views, UIView * containerView, CGFloat LRpadding, CGFloat viewPadding);
+
 /// md5 加密
 NSString *
 cy_md5(NSString * inPutText);
@@ -26,7 +30,7 @@ NSString *
 cy_base64(NSData * data);
 
 /// 获取时间字符串 (yyyyMMddHHmmss)
-CG_INLINE NSString *
+static inline NSString *
 cy_getDateStr(NSDate * date, NSString * format) {
     static NSDateFormatter * formatter = nil;
     static dispatch_once_t onceToken;
@@ -38,7 +42,7 @@ cy_getDateStr(NSDate * date, NSString * format) {
 }
 
 /// 获取时间 (yyyyMMddHHmmss)
-CG_INLINE NSDate *
+static inline NSDate *
 cy_getDate(NSString * dateStr, NSString * format) {
     static NSDateFormatter * formatter = nil;
     static dispatch_once_t onceToken;
@@ -47,17 +51,6 @@ cy_getDate(NSString * dateStr, NSString * format) {
     });
     formatter.dateFormat = format;
     return [formatter dateFromString:dateStr];
-}
-
-/// 获取本地视频的缩略图
-UIImage *
-cy_getVideoFirstImage(NSString * path);
-
-CG_INLINE BOOL
-cy_isURLAddress(NSString * URL) {
-    NSString * reg = @"((http[s]{0,1}|ftp)://[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)|(www.[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)";
-    NSPredicate * urlPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", reg];
-    return [urlPredicate evaluateWithObject:URL];
 }
 
 

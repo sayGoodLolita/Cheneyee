@@ -18,6 +18,7 @@ PODS:
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
   - IQKeyboardManager (6.5.4)
+  - Masonry (1.1.0)
   - MJRefresh (3.3.1)
   - ReactiveObjC (3.1.1)
   - YYModel (1.0.4)
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - AFNetworking
   - IGListKit
   - IQKeyboardManager
+  - Masonry
   - MJRefresh
   - ReactiveObjC
   - YYModel
@@ -36,6 +38,7 @@ SPEC REPOS:
     - IGListDiffKit
     - IGListKit
     - IQKeyboardManager
+    - Masonry
     - MJRefresh
     - ReactiveObjC
     - YYModel
@@ -45,10 +48,11 @@ SPEC CHECKSUMS:
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
   IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: dce9d1a9358b2bf04abf48db1dd0f2c25fe65b34
+PODFILE CHECKSUM: 9ede204dc6281bf4ff445affc4a15989d414b064
 
 COCOAPODS: 1.8.4

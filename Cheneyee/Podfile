@@ -11,6 +11,7 @@ target 'Cheneyee' do
   pod "YYModel"
   pod "IQKeyboardManager"
   pod "IGListKit"
+  pod "Masonry"
   
   # Pods for Cheneyee
 

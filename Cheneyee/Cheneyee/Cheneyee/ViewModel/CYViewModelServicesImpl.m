@@ -19,30 +19,17 @@
     return self;
 }
 
-- (void)dismissViewModelAnimated:(BOOL)animated completion:(nonnull VoidBlock)completion {
-    
-}
+- (void)dismissViewModelAnimated:(BOOL)animated completion:(void (^ __nullable)(void))completion { }
 
-- (void)popToRootViewModelAnimated:(BOOL)animated {
-    
-}
+- (void)popToRootViewModelAnimated:(BOOL)animated { }
 
-- (void)popViewModelAnimated:(BOOL)animated {
-    
-}
+- (void)popViewModelAnimated:(BOOL)animated { }
 
-- (void)presentViewModel:(nonnull CYViewModel *)viewModel animated:(BOOL)animated completion:(nonnull VoidBlock)completion {
-    
-}
+- (void)presentViewModel:(nonnull CYViewModel *)viewModel animated:(BOOL)animated completion:(void (^ __nullable)(void))completion { }
 
-- (void)pushViewModel:(nonnull CYViewModel *)viewModel animated:(BOOL)animated {
-    
-}
+- (void)pushViewModel:(nonnull CYViewModel *)viewModel animated:(BOOL)animated { }
 
-- (void)resetRootViewModel:(CYViewModel *)viewModel {
-    
-}
-
+- (void)resetRootViewModel:(CYViewModel *)viewModel { }
 
 
 @end

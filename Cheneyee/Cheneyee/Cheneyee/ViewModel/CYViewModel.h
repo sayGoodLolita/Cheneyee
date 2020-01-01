@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CYViewModelServices.h"
+#import <ReactiveObjC/ReactiveObjC.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,9 +31,6 @@ FOUNDATION_EXTERN NSString * const CYViewModelRequestKey;
 
 /// 导航栏 title
 @property (nonatomic, copy) NSString * title;
-
-/// 是否开启 largeTitles
-@property (nonatomic, assign) BOOL largeTitles;
 
 /// viewModel 中发生所有错误的 signal 对象
 @property (nonatomic, strong, readonly) RACSubject * errors;

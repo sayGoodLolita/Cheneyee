@@ -7,33 +7,10 @@
 //  所有 dataModel 的基类
 
 #import <Foundation/Foundation.h>
-#import <YYModel/YYModel.h>
-#import <IGListDiffable.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Block
-typedef void (^VoidBlock)(void);
-typedef BOOL (^BoolBlock)(void);
-typedef int  (^IntBlock) (void);
-typedef id _Nullable   (^IDBlock)  (void);
-
-typedef void (^VoidBlock_int)(int);
-typedef BOOL (^BoolBlock_int)(int);
-typedef int  (^IntBlock_int) (int);
-typedef id _Nullable   (^IDBlock_int)  (int);
-
-typedef void (^VoidBlock_string)(NSString *);
-typedef BOOL (^BoolBlock_string)(NSString *);
-typedef int  (^IntBlock_string) (NSString *);
-typedef id _Nullable   (^IDBlock_string)  (NSString *);
-
-typedef void (^VoidBlock_id)(id);
-typedef BOOL (^BoolBlock_id)(id);
-typedef int  (^IntBlock_id) (id);
-typedef id _Nonnull   (^IDBlock_id)  (id);
-
-@interface CYDataModel : NSObject <IGListDiffable, YYModel, NSCopying, NSCoding>
+@interface CYDataModel : NSObject <NSCopying, NSCoding>
 
 /// 将 json (NSData, NSString, NSDictionary) 转换为 model
 + (instancetype)modelWithJSON:(id)json;

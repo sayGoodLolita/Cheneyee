@@ -10,7 +10,6 @@
 #import <IGListKit/IGListKit.h>
 #import "CYListSectionController.h"
 #import "CYListViewModel.h"
-#import "UIScrollView+CYRefresh.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

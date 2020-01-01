@@ -7,7 +7,6 @@
 //
 
 #import "CYListSectionController.h"
-#import "CYViewController.h"
 
 @interface CYListSectionController ()
 
