@@ -146,20 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				04A667FC23BCECD700522921 /* Cheneyee.h */,
-				04A6683923BCECD700522921 /* Router */,
-				04A667DF23BCECD700522921 /* ViewModel */,
-				04A6682123BCECD700522921 /* DataModel */,
-				04A6682A23BCECD700522921 /* ViewController */,
-				04A667EC23BCECD700522921 /* Category */,
-				04A6680723BCECD700522921 /* Service */,
-				04A667FD23BCECD700522921 /* Utils */,
-			);
-			path = Cheneyee;
-			sourceTree = "<group>";
-		};
-		04A667DF23BCECD700522921 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
+				04A6683B23BCECD700522921 /* CYRouter.h */,
+				04A6683A23BCECD700522921 /* CYRouter.m */,
 				04A667E523BCECD700522921 /* CYNavigationProtocol.h */,
 				04A667E923BCECD700522921 /* CYViewModelServices.h */,
 				04A667E423BCECD700522921 /* CYViewModelServicesImpl.h */,
@@ -172,144 +160,6 @@
 				04A667E723BCECD700522921 /* CYWebViewModel.m */,
 				04A667EB23BCECD700522921 /* CYTabBarViewModel.h */,
 				04A667E323BCECD700522921 /* CYTabBarViewModel.m */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		04A667EC23BCECD700522921 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				04A667F923BCECD700522921 /* UINavigationController */,
-				04A667F023BCECD700522921 /* UIScrollView */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		04A667F023BCECD700522921 /* UIScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				04A667F123BCECD700522921 /* UIScrollView+CYRefresh.h */,
-				04A667F223BCECD700522921 /* UIScrollView+CYRefresh.m */,
-			);
-			path = UIScrollView;
-			sourceTree = "<group>";
-		};
-		04A667F923BCECD700522921 /* UINavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				04A667FB23BCECD700522921 /* UINavigationController+CYEx.h */,
-				04A667FA23BCECD700522921 /* UINavigationController+CYEx.m */,
-			);
-			path = UINavigationController;
-			sourceTree = "<group>";
-		};
-		04A667FD23BCECD700522921 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				04A667FE23BCECD700522921 /* FileManager */,
-				04A6680123BCECD700522921 /* Tool */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		04A667FE23BCECD700522921 /* FileManager */ = {
-			isa = PBXGroup;
-			children = (
-				04A667FF23BCECD700522921 /* CYFileManager.h */,
-				04A6680023BCECD700522921 /* CYFileManager.m */,
-			);
-			path = FileManager;
-			sourceTree = "<group>";
-		};
-		04A6680123BCECD700522921 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				04A6680623BCECD700522921 /* CYTools.h */,
-				04A6680323BCECD700522921 /* CYTools.m */,
-				04A6680223BCECD700522921 /* GTMBase64.h */,
-				04A6680523BCECD700522921 /* GTMBase64.m */,
-				04A6680423BCECD700522921 /* GTMDefines.h */,
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
-		04A6680723BCECD700522921 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				04A6680B23BCECD700522921 /* HTTP */,
-				04A6680823BCECD700522921 /* IAP */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		04A6680823BCECD700522921 /* IAP */ = {
-			isa = PBXGroup;
-			children = (
-				04A6680923BCECD700522921 /* CYAppStorePay.h */,
-				04A6680A23BCECD700522921 /* CYAppStorePay.m */,
-			);
-			path = IAP;
-			sourceTree = "<group>";
-		};
-		04A6680B23BCECD700522921 /* HTTP */ = {
-			isa = PBXGroup;
-			children = (
-				04A6680C23BCECD700522921 /* CYHTTPService.h */,
-				04A6681523BCECD700522921 /* CYHTTPService.m */,
-				04A6681823BCECD700522921 /* Request */,
-				04A6680D23BCECD700522921 /* Response */,
-				04A6681023BCECD700522921 /* Category */,
-				04A6681623BCECD700522921 /* Constant */,
-			);
-			path = HTTP;
-			sourceTree = "<group>";
-		};
-		04A6680D23BCECD700522921 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				04A6680F23BCECD700522921 /* CYHTTPResponse.h */,
-				04A6680E23BCECD700522921 /* CYHTTPResponse.m */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		04A6681023BCECD700522921 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				04A6681123BCECD700522921 /* AFHTTPSessionManager+CYSupport.h */,
-				04A6681323BCECD700522921 /* AFHTTPSessionManager+CYSupport.m */,
-				04A6681423BCECD700522921 /* RACSignal+CYHTTPService.h */,
-				04A6681223BCECD700522921 /* RACSignal+CYHTTPService.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		04A6681623BCECD700522921 /* Constant */ = {
-			isa = PBXGroup;
-			children = (
-				04A6681723BCECD700522921 /* CYHTTPServiceConstant.h */,
-			);
-			path = Constant;
-			sourceTree = "<group>";
-		};
-		04A6681823BCECD700522921 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				04A6681D23BCECD700522921 /* CYHTTPRequest.h */,
-				04A6681923BCECD700522921 /* CYHTTPRequest.m */,
-				04A6681B23BCECD700522921 /* CYURLParameters.h */,
-				04A6682023BCECD700522921 /* CYURLParameters.m */,
-				04A6681E23BCECD700522921 /* CYConstParameters.h */,
-				04A6681A23BCECD700522921 /* CYConstParameters.m */,
-				04A6681C23BCECD700522921 /* CYConstHeaderParameters.h */,
-				04A6681F23BCECD700522921 /* CYConstHeaderParameters.m */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		04A6682123BCECD700522921 /* DataModel */ = {
-			isa = PBXGroup;
-			children = (
 				04A6682223BCECD700522921 /* CYDataModel.h */,
 				04A6682623BCECD700522921 /* CYDataModel.m */,
 				04A6682823BCECD700522921 /* CYEXTRuntimeExtensions.h */,
@@ -318,13 +168,6 @@
 				04A6682723BCECD700522921 /* CYReflection.m */,
 				04A6682423BCECD700522921 /* NSError+CYExtension.h */,
 				04A6682923BCECD700522921 /* NSError+CYExtension.m */,
-			);
-			path = DataModel;
-			sourceTree = "<group>";
-		};
-		04A6682A23BCECD700522921 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
 				04A6683823BCECD700522921 /* CYNavigationControllerStack.h */,
 				04A6683123BCECD700522921 /* CYNavigationControllerStack.m */,
 				04A6682C23BCECD700522921 /* CYViewController.h */,
@@ -339,17 +182,38 @@
 				04A6683023BCECD700522921 /* CYNavigationController.m */,
 				04A6683523BCECD700522921 /* CYTabBarController.h */,
 				04A6682E23BCECD700522921 /* CYTabBarController.m */,
+				04A667FB23BCECD700522921 /* UINavigationController+CYEx.h */,
+				04A667FA23BCECD700522921 /* UINavigationController+CYEx.m */,
+				04A667F123BCECD700522921 /* UIScrollView+CYRefresh.h */,
+				04A667F223BCECD700522921 /* UIScrollView+CYRefresh.m */,
+				04A6680C23BCECD700522921 /* CYHTTPService.h */,
+				04A6681523BCECD700522921 /* CYHTTPService.m */,
+				04A6681D23BCECD700522921 /* CYHTTPRequest.h */,
+				04A6681923BCECD700522921 /* CYHTTPRequest.m */,
+				04A6681B23BCECD700522921 /* CYURLParameters.h */,
+				04A6682023BCECD700522921 /* CYURLParameters.m */,
+				04A6681E23BCECD700522921 /* CYConstParameters.h */,
+				04A6681A23BCECD700522921 /* CYConstParameters.m */,
+				04A6681C23BCECD700522921 /* CYConstHeaderParameters.h */,
+				04A6681F23BCECD700522921 /* CYConstHeaderParameters.m */,
+				04A6680F23BCECD700522921 /* CYHTTPResponse.h */,
+				04A6680E23BCECD700522921 /* CYHTTPResponse.m */,
+				04A6681123BCECD700522921 /* AFHTTPSessionManager+CYSupport.h */,
+				04A6681323BCECD700522921 /* AFHTTPSessionManager+CYSupport.m */,
+				04A6681423BCECD700522921 /* RACSignal+CYHTTPService.h */,
+				04A6681223BCECD700522921 /* RACSignal+CYHTTPService.m */,
+				04A6681723BCECD700522921 /* CYHTTPServiceConstant.h */,
+				04A6680923BCECD700522921 /* CYAppStorePay.h */,
+				04A6680A23BCECD700522921 /* CYAppStorePay.m */,
+				04A667FF23BCECD700522921 /* CYFileManager.h */,
+				04A6680023BCECD700522921 /* CYFileManager.m */,
+				04A6680623BCECD700522921 /* CYTools.h */,
+				04A6680323BCECD700522921 /* CYTools.m */,
+				04A6680223BCECD700522921 /* GTMBase64.h */,
+				04A6680523BCECD700522921 /* GTMBase64.m */,
+				04A6680423BCECD700522921 /* GTMDefines.h */,
 			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		04A6683923BCECD700522921 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				04A6683B23BCECD700522921 /* CYRouter.h */,
-				04A6683A23BCECD700522921 /* CYRouter.m */,
-			);
-			path = Router;
+			path = Cheneyee;
 			sourceTree = "<group>";
 		};
 		04FDEB0722EAE26100095124 = {
